@@ -33,6 +33,10 @@ body{
     justify-content: center;
 }
 
+.title h2 {
+    color: white;
+}
+
 .container{
     display: flex;
     flex-direction: column;
