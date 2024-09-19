@@ -8,6 +8,9 @@ button.onclick = function(){
     if (name===""){
         message.textContent="Please enter name";
         message.style.color="red";
+    } else if (!lettersOnly.test(name)) {
+        message.textContent = "Name must contain only letters";
+        message.style.color = "red";
     } else {
         message.textContent=`Welcome ${name}!`;
         message.style.color="green";
