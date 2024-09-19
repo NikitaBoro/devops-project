@@ -5,6 +5,8 @@ const message = document.getElementById('msg')
 
 button.onclick = function(){
     const name = input.value.trim();
+    const lettersOnly = /^[A-Za-z\s]+$/;
+
     if (name===""){
         message.textContent="Please enter name";
         message.style.color="red";
